@@ -1,0 +1,51 @@
+.table__container{
+    width: 100%;
+    display: block;
+    overflow-x: scroll;
+    table{
+        width: 100%;
+        position: relative;
+        left: 0;
+        box-shadow: $bxs;
+        tr{
+            background: #fff;
+            td:nth-child(1), th:nth-child(1){
+                position: sticky;
+                left: 0;
+                background: #fff;
+                border-right: 2px solid $a;
+            }
+        }
+        td, th{
+            border: 1px solid $lgray;
+            text-align: center;
+        }
+        th{
+            text-transform: uppercase;
+            padding: 10px 10px;
+        }
+        td{
+            padding: 10px 15px;
+            text-transform: capitalize;
+        }
+        img{width: 60px;}
+
+        @media screen and (min-width: 600px){
+            th{padding: 15px 5px;}
+        }
+    }
+    @media screen and (min-width: 900px){
+        overflow: visible;
+        table{
+            border-collapse: collapse;
+            tr{
+                td:nth-child(1), th:nth-child(1){
+                    border: 1px solid $lgray;
+                }
+            }
+        }
+    }
+}
+
+.fa-times{color: #ff0000!important;}
+.fa-check{color: #00b300!important;}

@@ -1,0 +1,81 @@
+.guide-enter-active {
+    transition: all .4s ease-in-out;
+}
+.guide-leave-active {
+  transition: all .4s ease-in-out;
+}
+.guide-enter, .guide-leave-to {
+    transform: translateX(100px);
+    opacity: 0;
+}
+
+
+
+.dropdown-enter-active {
+    transition: all .15s ease-in-out;
+}
+.dropdown-leave-active {
+  transition: all .15s ease-in-out;
+}
+.dropdown-enter, .dropdown-leave-to {
+    transform: translateY(-25px);
+    opacity: 0;
+}
+
+
+
+.foot-enter-active {
+    transition: all .3s ease-in-out;
+}
+.foot-leave-active {
+  transition: all .3s ease-in-out;
+}
+.foot-enter, .foot-leave-to {
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+.hamburger-enter-active {
+    transition: all .3s ease-in-out;
+}
+.hamburger-leave-active {
+  transition: all .3s ease-in-out;
+}
+.hamburger-enter, .hamburger-leave-to {
+    transform: rotate(180deg);
+    opacity: 0;
+}
+
+
+
+.fade-enter-active {
+    transition: all .2s ease-in-out;
+}
+.fade-leave-active {
+  transition: all .2s ease-in-out;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+
+
+.expand-enter-active {
+  animation: expand .3s ease-in;
+  animation-fill-mode: forwards;
+
+}
+.expand-leave-active {
+    animation: expand .3s reverse;
+    animation-fill-mode: forwards;
+}
+@keyframes expand {
+    0% {
+        opacity: 0;
+        height: 0px;
+    }
+    100% {
+        opacity: 1;
+        height: 180px;
+    }
+}

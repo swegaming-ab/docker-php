@@ -1,0 +1,32 @@
+.guide{
+    h2{text-align: left;}
+    hr{
+        height: 2px;
+        background: $a;
+        width: 150px;
+        margin-right: calc(100% - 150px);
+        margin-bottom: 20px;
+        border: none;
+    }
+    li{
+        font-family: 'Roboto', sans-serif!important;
+        &:before{
+            color: $a!important;
+        }
+        a{margin: 0 4px}
+    }
+    .container{
+        .wrap{
+            display: none;
+        }
+    }
+    .container:nth-child(odd){
+        background: $slblue;
+        background: $slgray!important;
+    }
+    .container:nth-child(2){
+        .wrap{
+            display: flex;
+        }
+    }
+}

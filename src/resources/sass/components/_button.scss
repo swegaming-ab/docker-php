@@ -1,0 +1,107 @@
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .15s ease-in-out;
+}
+
+.op-list__inner__list .col-2 a{
+    button{
+        display: flex;
+        background: transparent;
+        text-transform: uppercase;
+        color: $white;
+        font-weight: bold;
+    }
+    i{
+        display: none;
+    }
+    &:hover{
+        button{
+            padding-right: 10px;
+        }
+        i{
+            color: $white;
+            display: block;
+        }
+    }
+}
+
+.explore-btn{
+    margin-top: 20px;
+    // border:2px solid $a;
+    border-radius: 100px;
+    padding: 12.5px 30px;
+    background: $a;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    &:after{
+        transition: .15s ease-in-out;
+        opacity: 0;
+        position: absolute;
+        content: "\f061";
+        font-family: FontAwesome;
+        // color: #333;
+        margin-left: 10px;
+    }
+    &:hover{
+        padding: 12.5px 50px 12.5px 30px;
+        background: $aHover;
+        color: #fff;
+
+        &:after{
+            opacity: 1;
+            margin-left: 15px;
+            color: #fff;
+
+            // margin-left: 20px;
+        }
+        // box-shadow: none;
+        // border: 2px solid $aHover;
+    }
+    @media screen and (min-width: 600px){
+        margin-top: 60px;
+    }
+}
+.cta-btn{
+    a{
+        padding: 10px 50px;
+        border-radius: 3px;
+        background: $a;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        &:hover{
+            color: #fff;
+            background: $aHover;
+        }
+    }
+}
+.cta-link{
+    padding: 10px 30px;
+    border-radius: 3px;
+    background: $a;
+    color: #fff;
+    border: 2px solid $a;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover{
+        color: #fff;
+        background: $aHover;
+        border: 2px solid $aHover;
+    }
+}
+.review-link{
+    padding: 10px 30px;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px solid $a;
+    color: $a;
+    text-transform: capitalize;
+    &:hover{
+        color: $aHover;
+        border: 2px solid $aHover;
+    }
+}

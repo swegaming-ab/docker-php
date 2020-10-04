@@ -1,0 +1,24 @@
+.academy{
+    .container:nth-child(3){
+        background: #fff;
+        .rows-1__links-3{
+            li{
+                background: $slblue;
+                .content-img{
+                    background: #fff;
+                }
+            }
+        }
+    }
+    .container:nth-child(4){
+        background: $slblue;
+        .rows-1__links-3{
+            li{
+                background: #fff;
+                .content-img{
+                    background: $lgray;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.index{
+    .banner{
+        padding: 100px 0 50px 0;
+        &:after{
+            // background: url('../../images/bubbles1 mobile.png') no-repeat center;
+            // background-size: cover;
+            opacity: .5;
+            z-index: 1;
+        }
+        @media screen and (min-width: 600px){
+            padding: 200px 0 82px 0;
+
+            &:after{
+                background: url('../../images/bubbles1.png') no-repeat center;
+            }
+        }
+    }
+    hr{
+        height: 3px;
+        width: 100px;
+        margin-left: calc(50% - 75px);
+        margin-right: calc(50% - 75px);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: none;
+        background: $a;
+    }
+    h2{
+        font-weight: 500;
+    }
+    .container:nth-child(even){
+        background: $slblue;
+        background: $slcream;
+        background: $slgray;
+        .rows-1__links-5{
+            li{
+                background: #fff;
+                i{color: $a;}
+            }
+            a{
+                background: #fff;
+            }
+        }
+    }
+    .container:nth-child(odd){
+        background: #fff;
+        .rows-1__links-5{
+            li{
+                background: $slblue;
+                background: $slgray;
+
+                i{color: $a;}
+            }
+            a{
+                background: $slblue;
+                background: $slgray;
+
+            }
+        }
+    }
+}

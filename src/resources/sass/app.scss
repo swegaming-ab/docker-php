@@ -1,0 +1,20 @@
+@import 'main.scss';
+
+// TODO Normalize or similar
+// We should use normalize or similar instead of
+// doing something like this.
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    height: 5px!important;
+}
+img{
+    max-width: 100%;
+}
+
+::selection {
+  color: #fff;
+  background: $a;
+}

@@ -1,0 +1,9 @@
+a{
+    font-weight: bold;
+    color: $a;
+    text-decoration: none;
+    transition: .15s ease-in-out;
+    &:hover{
+        color: $aHover;
+    }
+}

@@ -29,9 +29,9 @@ services:
         networks:
             - network
 
-    #composer:
-    #    image: composer:1.9
-    #    command: ["composer", "install"]
-    #    volumes:
+    composer:
+        image: composer:1.9
+        command: ["composer", "install"]
+        volumes:
             # why app???
-    #        - ./src:/app
+            - ./src:/app

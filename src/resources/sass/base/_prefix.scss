@@ -1,0 +1,34 @@
+/* IE10-specific styles go here*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .nav__shadow{
+        z-index: -1!important;
+    }
+    .open__wrapper{
+        flex: none!important;
+        width: 50%!important;
+    }
+    .open__wrapper.right{
+        width: calc(50% - 1px)!important;
+    }
+    .nav__list__item-open .open__wrapper.left .open__wrapper-wrap.left{
+        max-width: none!important;
+    }
+    .nav__list__item-open .open__wrapper.left .open__wrapper-wrap.right{
+        max-width: none!important;
+    }
+    .open__wrapper.left{
+        .open__wrapper-wrap{
+            flex: 1;
+            ul{
+                display: grid!important;
+                max-height: 450px;
+                li{
+                    float: left!important;
+                    display: inline-block!important;
+                    .nav__item__header{display: block!important;}
+                    .nav__item__header,a, .nav__item__summary{display: block!important;}
+                }
+            }
+        }
+    }
+}
