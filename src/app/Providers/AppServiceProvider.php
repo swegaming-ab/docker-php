@@ -1,9 +1,8 @@
 <?php
 
 namespace App\Providers;
-use Illuminate\Support\ServiceProvider;
 
-use Spatie\Export\Exporter;
+use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -12,10 +11,9 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register(Exporter $exporter)
+    public function register()
     {
-        $exporter->crawl(false);
-        dd($exporter);
+        //
     }
 
     /**

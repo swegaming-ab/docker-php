@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,14 +14,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('cache/clear', 'ApiController@clearCache');
-Route::post('cache/clear', 'ApiController@clearCache');
-
-Route::get('cache/warm', 'ApiController@warmCache');
-Route::post('cache/warm', 'ApiController@warmCache');
-
-Route::get('cache/publish', 'ApiController@publishCache');
-Route::post('cache/publish', 'ApiController@publishCache');
-
-Route::get('sitemap/generate', 'ApiController@generateSitemap');
-Route::post('sitemap/generate', 'ApiController@generateSitemap');
+Route::middleware('auth:api')->get('/user', function (Request $request) {
+    return $request->user();
+});

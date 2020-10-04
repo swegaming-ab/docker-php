@@ -2,9 +2,6 @@
 
 return [
 
-    'minify' => env('VIEW_MINIFY', false),
-    'cache' => env('VIEW_CACHE', 30),
-
     /*
     |--------------------------------------------------------------------------
     | View Storage Paths
