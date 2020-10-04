@@ -7,6 +7,7 @@ services:
     nginx:
         image: nginx:stable-alpine
         container_name: nginx
+        restart: always
         ports:
             - "80:80"
         volumes:
@@ -22,6 +23,7 @@ services:
             context: .
             dockerfile: Dockerfile
         container_name: php
+        restart: always
         volumes:
             - ./src:/var/www
         ports:
@@ -32,6 +34,7 @@ services:
     composer:
         image: composer:1.9
         command: ["composer", "install"]
+        restart: always
         volumes:
             # why app???
             - ./src:/app
