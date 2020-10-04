@@ -1,7 +1,7 @@
 version: "3"
 
 networks:
-    laravel:
+    network:
 
 services:
     nginx:
@@ -15,7 +15,7 @@ services:
         depends_on:
             - php
         networks:
-            - laravel
+            - network
 
     php:
         build:
@@ -27,11 +27,11 @@ services:
         ports:
             - "9000:9000"
         networks:
-            - laravel
+            - network
 
-    composer:
-        image: composer:1.9
-        command: ["composer", "install"]
-        volumes:
+    #composer:
+    #    image: composer:1.9
+    #    command: ["composer", "install"]
+    #    volumes:
             # why app???
-            - ./src:/app
+    #        - ./src:/app
