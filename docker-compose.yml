@@ -30,6 +30,13 @@ services:
             - "9000:9000"
         networks:
             - network
+        environment: 
+            APP_NAME: 'Laravel with Docker'
+            APP_ENV: development
+            APP_KEY: 'base64:k7kJ2ZhdF9gltXivCE3WOGFqpIV3gsnv40s+mgK5bRg='
+            APP_DEBUG: 'true'
+            APP_URL: 'localhost:80'
+
 
     composer:
         image: composer:1.9
